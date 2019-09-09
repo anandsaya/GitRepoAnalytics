@@ -59,16 +59,25 @@ gem-builder
 safegem
 nagios-plugins-github
 
-3. And this tools must require 'orgname' paramter, other paramters in Positive Integer. For example,
+3. And this tools must require 'orgname' parameter, other parameters in Positive Integer. For example,
 
 python GitRepoSearch.py
-usage: god.py [-h] -orgname  [-ts] [-tf] [-tp] [-tc]
-god.py: error: argument -orgname/--organization is required
+usage: GitRepoSearch.py [-h] -orgname  [-ts] [-tf] [-tp] [-tc]
+GitRepoSearch.py: error: argument -orgname/--organization is required
 
 python GitRepoSearch.py -orgname github -ts ten
-usage: god.py [-h] -orgname  [-ts] [-tf] [-tp] [-tc]
-god.py: error: argument -ts/--topstar: invalid positiveinteger value: 'ten'
+usage: GitRepoSearch.py [-h] -orgname  [-ts] [-tf] [-tp] [-tc]
+GitRepoSearch.py: error: argument -ts/--topstar: invalid positiveinteger value: 'ten'
 
 python GitRepoSearch.py -orgname github -ts -14
-usage: god.py [-h] -orgname  [-ts] [-tf] [-tp] [-tc]
-god.py: error: argument -ts/--topstar: invalid positiveinteger value: '-14'
+usage: GitRepoSearch.py [-h] -orgname  [-ts] [-tf] [-tp] [-tc]
+GitRepoSearch.py: error: argument -ts/--topstar: invalid positiveinteger value: '-14'
+
+
+python GitRepoSearch.py -orgname bvcderth
+usage: GitRepoSearch.py [-h] -orgname  (-ts  | -tf  | -tp  | -tc )
+GitRepoSearch.py: error: one of the arguments -ts/--topstar -tf/--topfork -tp/--toppull -tc/--topcontribution is required
+
+python GitRepoSearch.py -orgname bvcderth -ts 10
+...................Output of Top 10 Stars Repos....................
+No matching output for top 10 stars in given organization repo
