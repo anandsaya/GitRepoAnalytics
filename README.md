@@ -1,15 +1,15 @@
-# Description. : Tool to find out Github organization Top Repos by number of Stars/Forks/Pulls/Contribution
-# Created On.  : Sep 08, 2019
-# Ticket No.   : Jira-XXXX
-# Created by.  : Anand Subramanian
-# Organization : XXXXXX
-# Usage        : This tool will  analyzes the popularity of an organization GitHub repos based on 
-#                   * Top-N repos by number of stars
-#                   * Top-N repos by number of forks
-#                   * Top-N repos by number of Pull Requests (PRs)
-#                   * Top-N repos by contribution percentage (PRs/forks)
+#Description. : Tool to find out Github organization Top Repos by number of Stars/Forks/Pulls/Contribution
+#Created On.  : Sep 08, 2019
+#Ticket No.   : Jira-XXXX
+#Created by.  : Anand Subramanian
+#Organization : XXXXXX
+#Usage        : This tool will  analyzes the popularity of an organization GitHub repos based on 
+                   * Top-N repos by number of stars
+                   * Top-N repos by number of forks
+                   * Top-N repos by number of Pull Requests (PRs)
+                   * Top-N repos by contribution percentage (PRs/forks)
 #Input         : You need to provide the input as command-line arguments. Please refer --help for more info
-# Requirement. : python 2.6 and above
+#Requirement. : python 2.6 and above
 
 How to Run this Tool:
 
